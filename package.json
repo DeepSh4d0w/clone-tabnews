@@ -9,8 +9,9 @@
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "docker:up": "sudo docker compose -f infra/compose.yml up -d",
-    "docker:down": "sudo docker compose -f infra/compose.yml down"
+    "services:up": "sudo docker compose -f infra/compose.yml up -d",
+    "services:stop": "sudo docker compose -f infra/compose.yml stop",
+    "services:down": "sudo docker compose -f infra/compose.yml down"
   },
   "author": "",
   "license": "MIT",
